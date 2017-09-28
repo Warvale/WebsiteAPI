@@ -17,6 +17,7 @@
   "homepage": "https://github.com/Warvale/WebsiteAPI#readme",
   "dependencies": {
     "express": "^4.15.5",
+    "minecraft-ping": "^1.0.0",
     "require-reload": "^0.2.2"
   }
 }
