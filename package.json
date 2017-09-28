@@ -1,0 +1,22 @@
+{
+  "name": "warvalewebsiteapi",
+  "version": "1.0.0",
+  "description": "Tiny API for the warvale website to supply homepage news.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Warvale/WebsiteAPI.git"
+  },
+  "author": "Warvale",
+  "bugs": {
+    "url": "https://github.com/Warvale/WebsiteAPI/issues"
+  },
+  "homepage": "https://github.com/Warvale/WebsiteAPI#readme",
+  "dependencies": {
+    "express": "^4.15.5",
+    "require-reload": "^0.2.2"
+  }
+}
