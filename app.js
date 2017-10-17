@@ -4,6 +4,7 @@ This is a really tiny micro-service.
 Routes:
 GET /news Returns some json which is the news.
 GET /players Returns a number of players on warvale. Updates every 30 seconds.
+GET /leaderboard
 */
 const express = require('express');
 const app = express();
@@ -34,3 +35,6 @@ require('minecraft-ping').ping_fe01fa({host:'warvale.net', port:25565}, function
 ping();
 
 setInterval(ping, 1000*30);
+
+exports.app = app;
+require("./leaderboard");
