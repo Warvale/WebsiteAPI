@@ -1,6 +1,6 @@
 var app = require("./app").app;
 var mysql = require('mysql');
-var connection = mysql.createConnection(require("./config"));
+var connection = mysql.createConnection(require("./dbconfig"));
 connection.connect(function(err) {
     if (err) {
       console.error('error connecting: ' + err.stack);
