@@ -10,7 +10,9 @@ connection.connect(function(err) {
 //SELECT * FROM `uhcffa_stats` ORDER BY `uhcffa_stats`.`deaths` DESC
 app.get("/leaderboard/:key", (req, res)=>{
     switch(req.params.key) {
-    
+        case "kills":
+        case "embers":
+        case "killstreak":
         case "deaths":
     connection.query(`SELECT * FROM \`uhcffa_stats\` ORDER BY \`uhcffa_stats\`.\`${req.params.key}\` DESC;`, function (error, results, fields) {
         if (error) {
