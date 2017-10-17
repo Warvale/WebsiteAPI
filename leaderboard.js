@@ -17,7 +17,12 @@ app.get("/leaderboard/:key", (req, res)=>{
             res.json("internal error!");
             throw error;
         }
-        res.json({results:results,fields:fields});
+        let gonnasend = [];
+        for (var i = 0; i < 11; i++) {
+            let res = results[i];
+            gonnasend.push({deaths:res.deaths,kills:res.kills,killstreak:res.killstreak,embers:res.embers});
+        }
+        res.json(gonnasend);
       });
       break;
 
