@@ -20,7 +20,7 @@ app.get("/leaderboard/:key", (req, res)=>{
         let gonnasend = [];
         for (var i = 0; i < 11; i++) {
             let res = results[i];
-            gonnasend.push({deaths:res.deaths,kills:res.kills,killstreak:res.killstreak,embers:res.embers});
+            gonnasend.push({uuid:res.uuid,deaths:res.deaths,kills:res.kills,killstreak:res.killstreak,embers:res.embers});
         }
         res.json(gonnasend);
       });
