@@ -8,8 +8,6 @@ GET /leaderboard
 */
 const express = require('express');
 const app = express();
-var ssl = require('express-ssl');
-app.use(ssl());
 var news = require("./news.json");
 var players = -1; // Just as a default value before we ping the server.
 setInterval(()=>{
